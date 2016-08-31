@@ -21,7 +21,7 @@ describe('components', function() {
 
     describe('navbarAbsoluteTop', function() {
       it('adds class has-navbar-top if navbarAbsoluteTop is present', function() {
-        let elem = angular.element('<div class="navbar-absolute-top" />');
+        let elem = angular.element('<div class="navbar-absolute-top" nav-controller />');
         compile(elem)(scope);
         scope.$digest();
 
@@ -29,7 +29,7 @@ describe('components', function() {
       });
 
       it('removes class has-navbar-top if navbarAbsoluteTop is destroyed', function() {
-        let elem = angular.element('<div class="navbar-absolute-top" />');
+        let elem = angular.element('<div class="navbar-absolute-top" nav-controller />');
         compile(elem)(scope);
         scope.$digest();
         scope.$destroy();
@@ -39,7 +39,7 @@ describe('components', function() {
 
     describe('navbarAbsoluteBottom', function() {
       it('adds class has-navbar-bottom if navbarAbsoluteBottom is present', function() {
-        let elem = angular.element('<div class="navbar-absolute-bottom" />');
+        let elem = angular.element('<div class="navbar-absolute-bottom" nav-controller />');
         compile(elem)(scope);
         scope.$digest();
 
@@ -47,7 +47,7 @@ describe('components', function() {
       });
 
       it('removes class has-navbar-bottom if navbarAbsoluteBottom is destroyed', function() {
-        let elem = angular.element('<div class="navbar-absolute-bottom" />');
+        let elem = angular.element('<div class="navbar-absolute-bottom" nav-controller />');
         compile(elem)(scope);
         scope.$digest();
         scope.$destroy();
